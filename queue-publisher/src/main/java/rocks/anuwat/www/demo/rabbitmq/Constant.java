@@ -5,6 +5,7 @@ public class Constant {
 	public static final String DIRECT_EXCHANGE = "Direct-Exchange";
 	public static final String FANOUT_EXCHANGE = "Fanout-Exchange";
 	public static final String TOPIC_EXCHANGE = "Topic-Exchange";
+	public static final String HEADERS_EXCHANGE = "Header-Exchange";
 
 	public static final String MOBILE_RTK = "mobile";
 	public static final String TV_RTK = "tv";
