@@ -18,7 +18,7 @@ public class Publisher {
 		String[] messages = {"First", "Second", "Third", "Fourth"};
 		
 		for(String message : messages) {
-			channel.basicPublish("", Constant.QUEUE_NAME, null, message.getBytes());
+			channel.basicPublish("", Constant.STARTUP_QUEUE, null, message.getBytes());
 		}
 		
 		//channel.basicPublish("", "Queue-1", null, message.getBytes());

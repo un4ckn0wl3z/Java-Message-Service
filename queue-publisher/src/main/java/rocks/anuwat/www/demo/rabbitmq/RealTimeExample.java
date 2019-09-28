@@ -22,7 +22,7 @@ public class RealTimeExample {
 		json.put("email", "anuwat@anuwat.rocks");
 		json.put("query", "select * from data");
 		
-		channel.basicPublish("", Constant.QUEUE_NAME, null, json.toString().getBytes());
+		channel.basicPublish("", Constant.STARTUP_QUEUE, null, json.toString().getBytes());
 		
 		channel.close();
 		connection.close();
