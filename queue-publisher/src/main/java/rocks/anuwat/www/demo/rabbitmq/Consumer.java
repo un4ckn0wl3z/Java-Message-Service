@@ -20,7 +20,7 @@ public class Consumer {
 			System.out.println("Message recived: " + message);
 		};
 		
-		channel.basicConsume("Queue-1", true, deliverCallback, consumerTag -> {
+		channel.basicConsume(Constant.QUEUE_NAME, true, deliverCallback, consumerTag -> {
 			
 		});
 
